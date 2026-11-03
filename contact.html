@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Kembo Empire</title>
+  <meta name="description" content="Get in touch with Kembo Empire to discuss your next creative, media, or software project.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav>
+    <a href="index.html" class="logo" aria-label="Kembo Empire Home">
+      <img src="images/Black and White Minimalist Luxury Logo/logo.png" alt="Kembo Empire Logo" class="logo-image">
+      <span class="logo-text">KEMBO <em>EMPIRE</em></span>
+    </a>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="contact.html" class="nav-btn nav-current" aria-current="page">Book Now</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <header class="page-hero">
+      <p class="eyebrow">LET'S TALK</p>
+      <h1>Start a <span class="gold">Project</span></h1>
+      <p class="page-lead">Tell us what you need. We’ll get back to you within 24 hours.</p>
+    </header>
+
+    <section class="contact-section">
+      <p class="eyebrow center">GET IN TOUCH</p>
+      <h2 class="section-title">Choose How to Reach Us</h2>
+      <div class="grid-4 contact-grid">
+        <article class="stat contact-card">
+          <span class="service-icon" aria-hidden="true">↗</span>
+          <h3>Call</h3>
+          <a href="tel:+254793901202" class="gold">+254 793 901 202</a>
+        </article>
+        <article class="stat contact-card">
+          <span class="service-icon" aria-hidden="true">✉</span>
+          <h3>Email</h3>
+          <a href="mailto:kembojunior254@gmail.com" class="gold">kembojunior254@gmail.com</a>
+        </article>
+        <article class="stat contact-card">
+          <span class="service-icon" aria-hidden="true">◉</span>
+          <h3>WhatsApp</h3>
+          <a href="https://wa.me/254793901202" class="gold" target="_blank" rel="noopener noreferrer">Chat with us</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="booking-section" id="booking">
+      <div class="booking-heading">
+        <p class="eyebrow center">READY WHEN YOU ARE</p>
+        <h2 class="section-title">Tell Us About Your Project</h2>
+        <p class="booking-intro">Share a few details below. Your message will open in WhatsApp so we can talk through the next steps.</p>
+      </div>
+      <div class="booking-layout">
+        <form class="booking-form" id="booking-form">
+          <div class="form-field">
+            <label for="booking-name">Your name <span aria-hidden="true">*</span></label>
+            <input id="booking-name" name="name" type="text" autocomplete="name" placeholder="e.g. Alex Kimani" required>
+          </div>
+          <div class="form-field">
+            <label for="booking-phone">Phone / WhatsApp number <span aria-hidden="true">*</span></label>
+            <input id="booking-phone" name="phone" type="tel" autocomplete="tel" placeholder="+254 7XX XXX XXX" required>
+          </div>
+          <div class="form-field">
+            <label for="booking-email">Email <span class="optional">(optional)</span></label>
+            <input id="booking-email" name="email" type="email" autocomplete="email" placeholder="you@example.com">
+          </div>
+          <div class="form-field">
+            <label for="booking-service">What do you need? <span aria-hidden="true">*</span></label>
+            <select id="booking-service" name="service" required>
+              <option value="" selected disabled>Choose a service</option>
+              <option>Video editing</option>
+              <option>Content creation</option>
+              <option>Graphic or logo design</option>
+              <option>Social media or digital marketing</option>
+              <option>Website development</option>
+              <option>App development</option>
+              <option>Custom software</option>
+              <option>Something else</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="booking-timeline">When do you need it? <span class="optional">(optional)</span></label>
+            <select id="booking-timeline" name="timeline">
+              <option value="">Select a timeline</option>
+              <option>As soon as possible</option>
+              <option>Within 1–2 weeks</option>
+              <option>Within a month</option>
+              <option>I have flexible timing</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="booking-budget">Estimated budget <span class="optional">(optional)</span></label>
+            <select id="booking-budget" name="budget">
+              <option value="">Prefer to discuss</option>
+              <option>Under KSh 5,000</option>
+              <option>KSh 5,000–15,000</option>
+              <option>KSh 15,000–50,000</option>
+              <option>Over KSh 50,000</option>
+            </select>
+          </div>
+          <div class="form-field form-field-wide">
+            <label for="booking-details">Tell us a little about the project <span aria-hidden="true">*</span></label>
+            <textarea id="booking-details" name="details" rows="5" placeholder="What are you looking to create? Include any goals, ideas, or useful details." required></textarea>
+          </div>
+          <div class="form-field-wide form-submit">
+            <button type="submit" class="btn gold-btn">Continue to WhatsApp</button>
+            <p class="form-note">WhatsApp will open with your details ready to send. You can review the message before sending.</p>
+            <p class="form-status" id="booking-status" role="status" aria-live="polite"></p>
+            <a class="booking-fallback" id="booking-fallback" target="_blank" rel="noopener noreferrer" hidden>Open WhatsApp manually</a>
+          </div>
+        </form>
+
+        <aside class="booking-aside">
+          <span class="service-icon" aria-hidden="true">✦</span>
+          <h3>What happens next?</h3>
+          <ol>
+            <li>We review your project details.</li>
+            <li>We get in touch to clarify your goals and timing.</li>
+            <li>We discuss the scope, quote, and next steps together.</li>
+          </ol>
+          <p>Rather talk directly?</p>
+          <a href="tel:+254793901202" class="gold">Call +254 793 901 202</a>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <span class="logo-text gold">KEMBO EMPIRE</span>
+        <p>Media &amp; Software Company<br>Where Creativity Meets Code.</p>
+      </div>
+      <div>
+        <h2>Contact</h2>
+        <p><a href="tel:+254793901202">+254 793 901 202</a></p>
+        <p><a href="mailto:kembojunior254@gmail.com">kembojunior254@gmail.com</a></p>
+        <p><a href="https://wa.me/254793901202" target="_blank" rel="noopener noreferrer">WhatsApp Chat</a></p>
+      </div>
+      <div>
+        <h2>Explore</h2>
+        <p><a href="about.html">About</a></p>
+        <p><a href="services.html">Services</a></p>
+        <p><a href="portfolio.html">Portfolio</a></p>
+      </div>
+    </div>
+    <p class="copyright">© 2026 Kembo Empire. All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
