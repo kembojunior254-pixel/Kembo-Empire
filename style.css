@@ -696,7 +696,10 @@ footer {
   flex-direction: column;
   width: min(370px, calc(100vw - 32px));
   height: min(520px, calc(100vh - 120px));
+  max-width: none;
+  margin: 0;
   overflow: hidden;
+  padding: 0;
   border: 1px solid var(--line);
   border-radius: 10px;
   background: var(--soft-black);
